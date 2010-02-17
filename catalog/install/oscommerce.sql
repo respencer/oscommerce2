@@ -17,7 +17,7 @@
 #         the mysqldiff perl script located in the extras
 #         directory of the 'catalog' module.
 #       * Comments should be like these, full line comments.
-#         (don't use inline comments)
+#         (do not use inline comments)
 
 DROP TABLE IF EXISTS action_recorder;
 CREATE TABLE action_recorder (
