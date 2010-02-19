@@ -141,7 +141,7 @@ define('PULL_DOWN_DEFAULT', 'Please Select');
 define('TYPE_BELOW', 'Type Below');
 
 // javascript messages
-define('JS_ERROR', 'Errors have occured during the process of your form.\n\nPlease make the following corrections:\n\n');
+define('JS_ERROR', 'Errors have occurred during the process of your form.\n\nPlease make the following corrections:\n\n');
 
 define('JS_REVIEW_TEXT', '* The \'Review Text\' must have at least ' . REVIEW_TEXT_MIN_LENGTH . ' characters.\n');
 define('JS_REVIEW_RATING', '* You must rate the product for your review.\n');
@@ -171,8 +171,8 @@ define('ENTRY_LAST_NAME', 'Last Name:');
 define('ENTRY_LAST_NAME_ERROR', 'Your Last Name must contain a minimum of ' . ENTRY_LAST_NAME_MIN_LENGTH . ' characters.');
 define('ENTRY_LAST_NAME_TEXT', '*');
 define('ENTRY_DATE_OF_BIRTH', 'Date of Birth:');
-define('ENTRY_DATE_OF_BIRTH_ERROR', 'Your Date of Birth must be in this format: MM/DD/YYYY (eg 05/21/1970)');
-define('ENTRY_DATE_OF_BIRTH_TEXT', '* (eg. 05/21/1970)');
+define('ENTRY_DATE_OF_BIRTH_ERROR', 'Your Date of Birth must be in this format: MM/DD/YYYY (e.g., 05/21/1970)');
+define('ENTRY_DATE_OF_BIRTH_TEXT', '* (e.g., 05/21/1970)');
 define('ENTRY_EMAIL_ADDRESS', 'E-Mail Address:');
 define('ENTRY_EMAIL_ADDRESS_ERROR', 'Your E-Mail Address must contain a minimum of ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' characters.');
 define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', 'Your E-Mail Address does not appear to be valid - please make any necessary corrections.');

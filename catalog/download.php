@@ -39,7 +39,7 @@
 
 // Returns a random name, 16 to 20 characters long
 // There are more than 10^28 combinations
-// The directory is "hidden", i.e. starts with '.'
+// The directory is "hidden", i.e., starts with '.'
 function tep_random_name()
 {
   $letters = 'abcdefghijklmnopqrstuvwxyz';

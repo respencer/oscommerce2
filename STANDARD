@@ -4,7 +4,7 @@ osCommerce Coding Standards
 
 Coding standards are defined to keep the codebase in a maintainable state.
 
-The more developers working within the codebase means the more ways php
+The more developers working within the codebase means the more ways PHP
 logic can be written.
 
 If every developer follows the standards then everyone is able to review
@@ -15,17 +15,17 @@ File Format
 -----------
 
 The source code should be saved in Unix format - meaning with Unix
-linefeeds.
+line-feeds.
 
 Most editors are able to set the preferred format method of Windows,
 Unix, or Macintosh.
 
 Some editors add a line to the bottom of the file. This is safe to have
 as long as a further character (including the space character) does not
-exist. Characters that exist at the end of the file may interfer when
+exist. Characters that exist at the end of the file may interfere when
 redirections occur as text has been sent to the client already.
 
-The filename of the files must be all lowercass characters and contain
+The filename of the files must be all lowercase characters and contain
 no more than 31 characters to be Apple/Mac compatible.
 
 Indentation
@@ -197,7 +197,7 @@ The second type of class set are the dynamic modules that can be found
 in the includes/modules/* directories.
 
 The class names must match the filename as most of them are include()'d
-dynamicly.
+dynamically.
 
 For example, a class filename of my_own_module.php has a class name of
 my_own_module.
@@ -211,7 +211,7 @@ The class should be written in the following structure:
   class myclass {
     var $variable;
 
-// class constuctor
+// class constructor
     function myclass() {
 
       ....
@@ -264,7 +264,7 @@ structured as:
   }
 ?>
 
-Unlike displaying strings, double quote characters are wrapped around the sql query.
+Unlike displaying strings, double quote characters are wrapped around the SQL query.
 
 The following is currently for the Administration Tool but will also be implemented
 in the Catalog module.

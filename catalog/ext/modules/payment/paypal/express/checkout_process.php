@@ -223,7 +223,7 @@
     tep_db_perform(TABLE_ORDERS_PRODUCTS, $sql_data_array);
     $order_products_id = tep_db_insert_id();
 
-//------insert customer choosen option to order--------
+//------insert customer chosen option to order--------
     $attributes_exist = '0';
     $products_ordered_attributes = '';
     if (isset($order->products[$i]['attributes'])) {
@@ -266,7 +266,7 @@
         $products_ordered_attributes .= "\n\t" . $attributes_values['products_options_name'] . ' ' . $attributes_values['products_options_values_name'];
       }
     }
-//------insert customer choosen option eof ----
+//------insert customer chosen option eof ----
     $total_weight += ($order->products[$i]['qty'] * $order->products[$i]['weight']);
     $total_tax += tep_calculate_tax($total_products_price, $products_tax) * $order->products[$i]['qty'];
     $total_cost += $total_products_price;

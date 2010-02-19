@@ -59,7 +59,7 @@
         <td class="inputDescription">The web address to the online store.</td>
       </tr>
       <tr>
-        <td class="inputField"><?php echo 'Webserver Root Directory<br />' . osc_draw_input_field('DIR_FS_DOCUMENT_ROOT', $dir_fs_www_root, 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'Web server Root Directory<br />' . osc_draw_input_field('DIR_FS_DOCUMENT_ROOT', $dir_fs_www_root, 'class="text"'); ?></td>
         <td class="inputDescription">The directory where the online store is installed on the server.</td>
       </tr>
     </table>

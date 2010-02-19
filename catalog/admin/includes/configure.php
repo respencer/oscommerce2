@@ -10,14 +10,14 @@
   Released under the GNU General Public License
 */
 
-// define our webserver variables
+// define our web server variables
 // FS = Filesystem (physical)
-// WS = Webserver (virtual)
-  define('HTTP_SERVER', ''); // eg, http://localhost or - https://localhost should not be NULL for productive servers
+// WS = Web server (virtual)
+  define('HTTP_SERVER', ''); // e.g., http://localhost or - https://localhost should not be NULL for productive servers
   define('HTTP_CATALOG_SERVER', '');
   define('HTTPS_CATALOG_SERVER', '');
-  define('ENABLE_SSL_CATALOG', 'false'); // secure webserver for catalog module
-  define('DIR_FS_DOCUMENT_ROOT', $DOCUMENT_ROOT); // where your pages are located on the server. if $DOCUMENT_ROOT doesnt suit you, replace with your local path. (eg, /usr/local/apache/htdocs)
+  define('ENABLE_SSL_CATALOG', 'false'); // secure web server for catalog module
+  define('DIR_FS_DOCUMENT_ROOT', $DOCUMENT_ROOT); // where your pages are located on the server. if $DOCUMENT_ROOT doesn't suit you, replace with your local path. (e.g., /usr/local/apache/htdocs)
   define('DIR_WS_ADMIN', '/admin/');
   define('DIR_FS_ADMIN', DIR_FS_DOCUMENT_ROOT . DIR_WS_ADMIN);
   define('DIR_WS_CATALOG', '/catalog/');

@@ -15,7 +15,7 @@
 class PHPlot{
 
 	var $is_inline = 0;			//0 = Sends headers, 1 = sends just raw image data
-	var $browser_cache = '1';	// 0 = Sends headers for browser to not cache the image, (i.e. 0 = don't let browser cache image)
+	var $browser_cache = '1';	// 0 = Sends headers for browser to not cache the image, (i.e., 0 = don't let browser cache image)
 									// (only if is_inline = 0 also)
 	var $session_set = '';		//Do not change
 	var $scale_is_set = '';		//Do not change
@@ -844,7 +844,7 @@ class PHPlot{
 						$tmp++;
 					}
 				break;
-				case "data-data":  //X-Y data is passed in as $data[] = (title,x,y,y2,y3,...) which you can use for multi-dimentional plots.
+				case "data-data":  //X-Y data is passed in as $data[] = (title,x,y,y2,y3,...) which you can use for multi-dimensional plots.
 
 					while (list($key, $val) = each($dat)) {
 						if ($key == 1) {  //$dat[0] = label
@@ -1082,7 +1082,7 @@ class PHPlot{
 	}
 
 	function DrawError($error_message) {
-	// prints the error message inline into
+	// prints the error message in-line into
 	// the generated image
 
 		if (($this->img) == "") { $this->InitImage(); } ;
@@ -1510,7 +1510,7 @@ class PHPlot{
 	}
 
 	function DrawHorizontalTicks() {
-		//Ticks and lables are drawn on the left border of PlotArea.
+		//Ticks and labels are drawn on the left border of PlotArea.
 		//Left Bottom
 		ImageLine($this->img,$this->plot_area[0],
 				$this->plot_area[3]+$this->tick_length,
@@ -1642,17 +1642,17 @@ class PHPlot{
 
 	function DrawVerticalTick($which_ylab,$which_ypos) {  //ylab in world coord.
 		//Draw Just one Tick, called from DrawVerticalTicks
-		//Ticks and datalables can be left of plot only, right of plot only, 
+		//Ticks and data labels can be left of plot only, right of plot only, 
 		//  both on the left and right of plot, or crossing a user defined Y-axis
 		// 
 		//Its faster to draw both left and right ticks at same time
 		//  than first left and then right. 
 
 		if ($this->y_axis_position != "") { 
-			//Ticks and lables are drawn on the left border of yaxis
+			//Ticks and labels are drawn on the left border of yaxis
 			$yaxis_x = $this->xtr($this->y_axis_position);
 		} else { 
-			//Ticks and lables are drawn on the left border of PlotArea.
+			//Ticks and labels are drawn on the left border of PlotArea.
 			$yaxis_x = $this->plot_area[0];
 		}
 

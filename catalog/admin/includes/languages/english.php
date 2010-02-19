@@ -11,7 +11,7 @@
 */
 
 // look in your $PATH_LOCALE/locale directory for available locales..
-// on RedHat6.0 I used 'en_US'
+// on RedHat 6.0 I used 'en_US'
 // on FreeBSD 4.0 I use 'en_US.ISO_8859-1'
 // this may not work under win32 environments..
 setlocale(LC_TIME, 'en_US.ISO_8859-1');
@@ -110,17 +110,17 @@ define('BOX_TOOLS_SEC_DIR_PERMISSIONS', 'Security Directory Permissions');
 define('BOX_TOOLS_SERVER_INFO', 'Server Info');
 define('BOX_TOOLS_WHOS_ONLINE', 'Who\'s Online');
 
-// localizaion box text in includes/boxes/localization.php
+// localization box text in includes/boxes/localization.php
 define('BOX_HEADING_LOCALIZATION', 'Localization');
 define('BOX_LOCALIZATION_CURRENCIES', 'Currencies');
 define('BOX_LOCALIZATION_LANGUAGES', 'Languages');
 define('BOX_LOCALIZATION_ORDERS_STATUS', 'Orders Status');
 
 // javascript messages
-define('JS_ERROR', 'Errors have occured during the process of your form!\nPlease make the following corrections:\n\n');
+define('JS_ERROR', 'Errors have occurred during the processing of your form!\nPlease make the following corrections:\n\n');
 
-define('JS_OPTIONS_VALUE_PRICE', '* The new product atribute needs a price value\n');
-define('JS_OPTIONS_VALUE_PRICE_PREFIX', '* The new product atribute needs a price prefix\n');
+define('JS_OPTIONS_VALUE_PRICE', '* The new product attribute needs a price value\n');
+define('JS_OPTIONS_VALUE_PRICE_PREFIX', '* The new product attribute needs a price prefix\n');
 
 define('JS_PRODUCTS_NAME', '* The new product needs a name\n');
 define('JS_PRODUCTS_DESCRIPTION', '* The new product needs a description\n');
@@ -145,7 +145,7 @@ define('JS_STATE_SELECT', '-- Select Above --');
 define('JS_ZONE', '* The \'State\' entry must be selected from the list for this country.');
 define('JS_COUNTRY', '* The \'Country\' value must be chosen.\n');
 define('JS_TELEPHONE', '* The \'Telephone Number\' entry must have at least ' . ENTRY_TELEPHONE_MIN_LENGTH . ' characters.\n');
-define('JS_PASSWORD', '* The \'Password\' amd \'Confirmation\' entries must match amd have at least ' . ENTRY_PASSWORD_MIN_LENGTH . ' characters.\n');
+define('JS_PASSWORD', '* The \'Password\' and \'Confirmation\' entries must match and have at least ' . ENTRY_PASSWORD_MIN_LENGTH . ' characters.\n');
 
 define('JS_ORDER_DOES_NOT_EXIST', 'Order Number %s does not exist!');
 
@@ -162,7 +162,7 @@ define('ENTRY_FIRST_NAME_ERROR', '&nbsp;<span class="errorText">min ' . ENTRY_FI
 define('ENTRY_LAST_NAME', 'Last Name:');
 define('ENTRY_LAST_NAME_ERROR', '&nbsp;<span class="errorText">min ' . ENTRY_LAST_NAME_MIN_LENGTH . ' chars</span>');
 define('ENTRY_DATE_OF_BIRTH', 'Date of Birth:');
-define('ENTRY_DATE_OF_BIRTH_ERROR', '&nbsp;<span class="errorText">(eg. 05/21/1970)</span>');
+define('ENTRY_DATE_OF_BIRTH_ERROR', '&nbsp;<span class="errorText">(e.g., 05/21/1970)</span>');
 define('ENTRY_EMAIL_ADDRESS', 'E-Mail Address:');
 define('ENTRY_EMAIL_ADDRESS_ERROR', '&nbsp;<span class="errorText">min ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' chars</span>');
 define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', '&nbsp;<span class="errorText">The email address doesn\'t appear to be valid!</span>');

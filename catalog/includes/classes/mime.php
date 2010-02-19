@@ -41,7 +41,7 @@
     function mime($body, $params = '') {
       if ($params == '') $params = array();
 
-// Make sure we use the correct linfeed sequence
+// Make sure we use the correct line-feed sequence
       if (EMAIL_LINEFEED == 'CRLF') {
         $this->lf = "\r\n";
       } else {

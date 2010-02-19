@@ -5,11 +5,11 @@
  *   - Thanks to Chris for the domlay() function
  *   - this requires calendarcode.js, calendar.css, and calendarTest.htm
  *   - works in IE4.x, IE5.x, NS4.75 possibly 4.x, NS6 (with slight cosmetic issues)
- *   - Netscape does display some controls overtop of the layer so layout is important
+ *   - Netscape does display some controls ontop of the layer, so layout is important
  *
  */
  
-// initialiZe variables... 
+// initialize variables... 
 var ppcIE=((navigator.appName == "Microsoft Internet Explorer") || ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion)==5)));
 var ppcNN6=((navigator.appName == "Netscape") && (parseInt(navigator.appVersion)==5));
 //var ppcIE=(navigator.appName == "Microsoft Internet Explorer");

@@ -421,7 +421,7 @@
   //
   // Return      : state_prov_code   state/province code
   //
-  // Description : Function to retrieve the state/province code (as in FL for Florida etc)
+  // Description : Function to retrieve the state/province code (as in FL for Florida etc.)
   //
   ////////////////////////////////////////////////////////////////////////////////////////////////
   function tep_get_zone_code($country, $zone, $def_state) {
@@ -771,7 +771,7 @@
   }
 
 ////
-// Retreive server information
+// Retrieve server information
   function tep_get_system_information() {
     global $HTTP_SERVER_VARS;
 
@@ -969,7 +969,7 @@
       $type = 'l';
     } elseif ( ($mode & 0x8000) == 0x8000) { // regular file
       $type = '-';
-    } elseif ( ($mode & 0x6000) == 0x6000) { //bBlock special file
+    } elseif ( ($mode & 0x6000) == 0x6000) { // block special file
       $type = 'b';
     } elseif ( ($mode & 0x2000) == 0x2000) { // character special file
       $type = 'c';
@@ -1266,7 +1266,7 @@
     }
   }
 
-// nl2br() prior PHP 4.2.0 did not convert linefeeds on all OSs (it only converted \n)
+// nl2br() prior PHP 4.2.0 did not convert line-feeds on all OSs (it only converted \n)
   function tep_convert_linefeeds($from, $to, $string) {
     if ((PHP_VERSION < "4.0.5") && is_array($from)) {
       return preg_replace('/(' . implode('|', $from) . ')/', $to, $string);

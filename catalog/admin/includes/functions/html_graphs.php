@@ -16,7 +16,7 @@
 // calls routines to initialize defaults, set up table
 // print data, and close table.
   function html_graph($names, $values, $bars, $vals, $dvalues = 0, $dbars = 0) {
-// set the error level on entry and exit so as not to interfear with anyone elses error checking.
+// set the error level on entry and exit so as not to interfere with anyone else's error checking.
     $er = error_reporting(1);
 
 // set the values that the user didn't
@@ -97,7 +97,7 @@
       $start_graph_string .= '  <tr>' . "\n" .
                              '    <td align="center" valign="center"';
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $start_graph_string .= ' bgcolor="' . $vals['hbgcolor'] . '"';
 
       $start_graph_string .= ' colspan="' . $colspan . '"><font color="' . $vals['hfcolor'] . '" style="' . $vals['hfstyle'] . '"><b>' . $vals['hlabel'] . '</b></font></td>' . "\n" .
@@ -105,7 +105,7 @@
                              '  <tr>' . "\n" .
                              '    <td align="center" valign="center"';
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $start_graph_string .= ' bgcolor="' . $vals['vbgcolor'] . '"';
 
       $start_graph_string .=  ' rowspan="' . $rowspan . '"><font color="' . $vals['vfcolor'] . '" style="' . $vals['vfstyle'] . '"><b>' . $vals['vlabel'] . '</b></font></td>' . "\n" .
@@ -148,13 +148,13 @@
     for($i = 0, $n = sizeof($values); $i < $n; $i++) { 
       $horizontal_graph_string .= '  <tr>' . "\n" .
                                   '    <td align="right"';
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $horizontal_graph_string .= ' bgcolor="' . $vals['namebgcolor'] . '"';
 
       $horizontal_graph_string .= '><font size="-1" color="' . $vals['namefcolor'] . '" style="' . $vals['namefstyle'] . '">' . $names[$i] . '</font></td>' . "\n" .
                                   '    <td'; 
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $horizontal_graph_string .= ' bgcolor="' . $vals['valuebgcolor'] . '"';
 
       $horizontal_graph_string .= '>';
@@ -189,7 +189,7 @@
     for ($i = 0, $n = sizeof($values); $i < $n; $i++) {
       $vertical_graph_string .= '    <td align="center" valign="bottom"';
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $vertical_graph_string .= ' bgcolor="' . $vals['valuebgcolor'] . '"';
 
       $vertical_graph_string .= '>';
@@ -218,7 +218,7 @@
     for ($i = 0, $n = sizeof($values); $i < $n; $i++) {
       $vertical_graph_string .= '    <td align="center" valign="top"';
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $vertical_graph_string .= ' bgcolor="' . $vals['namebgcolor'] . '"';
 
       $vertical_graph_string .= '><font size="-1" color="' . $vals['namefcolor'] . '" style="' . $vals['namefstyle'] . '">' . $names[$i] . '</font></td>' . "\n";
@@ -237,13 +237,13 @@
       $double_horizontal_graph_string .= '  <tr>' . "\n" .
                                         '    <td align="right"';
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $double_horizontal_graph_string .= ' bgcolor="' . $vals['namebgcolor'] . '"';
 
       $double_horizontal_graph_string .= '><font size="-1" color="' . $vals['namefcolor'] . '" style="' . $vals['namefstyle'] . '">' . $names[$i] . '</font></td>' . "\n" .
                                          '    <td';
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $double_horizontal_graph_string .= ' bgcolor="' . $vals['valuebgcolor'] . '"';
 
       $double_horizontal_graph_string .= '><table align="left" cellpadding="0" cellspacing="0" width="' . ($dvalues[$i] * $vals['scale']) . '">' . "\n" .
@@ -296,14 +296,14 @@
     for ($i = 0, $n = sizeof($values); $i < $n; $i++) {
       $double_vertical_graph_string .= '    <td align="center" valign="bottom"';
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $double_vertical_graph_string .= ' bgcolor="' . $vals['valuebgcolor'] . '"';
 
       $double_vertical_graph_string .= '><table>' . "\n" .
                                        '      <tr>' . "\n" .
                                        '        <td align="center" valign="bottom"';
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $double_vertical_graph_string .= ' bgcolor="' . $vals['valuebgcolor'] . '"';
 
       $double_vertical_graph_string .= '>';
@@ -323,7 +323,7 @@
       $double_vertical_graph_string .= '"></td>' . "\n" .
                                        '        <td align="center" valign="bottom"';
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $double_vertical_graph_string .= ' bgcolor="' . $vals['valuebgcolor'] . '"';
 
       $double_vertical_graph_string .= '>';
@@ -351,7 +351,7 @@
     for ($i = 0, $n = sizeof($values); $i < $n; $i++) {
       $double_vertical_graph_string .= '    <td align="center" valign="top"';
 
-// if a background was choosen don't print cell BGCOLOR
+// if a background was chosen don't print cell BGCOLOR
       if (!$vals['background']) $double_vertical_graph_string .= ' bgcolor="' . $vals['namebgcolor'] . '"';
 
       $double_vertical_graph_string .= '><font size="-1" color="' . $vals['namefcolor'] . '" style="' . $vals['namefstyle'] . '">' . $names[$i] . '</font></td>' . "\n";

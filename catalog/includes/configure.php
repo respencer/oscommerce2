@@ -10,12 +10,12 @@
   Released under the GNU General Public License
 */
 
-// Define the webserver and path parameters
+// Define the web server and path parameters
 // * DIR_FS_* = Filesystem directories (local/physical)
-// * DIR_WS_* = Webserver directories (virtual/URL)
-  define('HTTP_SERVER', ''); // eg, http://localhost - should not be empty for productive servers
-  define('HTTPS_SERVER', ''); // eg, https://localhost - should not be empty for productive servers
-  define('ENABLE_SSL', false); // secure webserver for checkout procedure?
+// * DIR_WS_* = Web server directories (virtual/URL)
+  define('HTTP_SERVER', ''); // e.g., http://localhost - should not be empty for productive servers
+  define('HTTPS_SERVER', ''); // e.g., https://localhost - should not be empty for productive servers
+  define('ENABLE_SSL', false); // secure web server for checkout procedure?
   define('HTTP_COOKIE_DOMAIN', '');
   define('HTTPS_COOKIE_DOMAIN', '');
   define('HTTP_COOKIE_PATH', '');
@@ -37,7 +37,7 @@
   define('DIR_FS_DOWNLOAD_PUBLIC', DIR_FS_CATALOG . 'pub/');
 
 // define our database connection
-  define('DB_SERVER', ''); // eg, localhost - should not be empty for productive servers
+  define('DB_SERVER', ''); // e.g., localhost - should not be empty for productive servers
   define('DB_SERVER_USERNAME', '');
   define('DB_SERVER_PASSWORD', '');
   define('DB_DATABASE', 'osCommerce');

@@ -71,7 +71,7 @@ Due to two bugs that were introduced with 2.2 RC2, it has been repackaged as
   Administration Tool -> Tools -> Newsletter Manager section.
   [r1751]
 
-* Improve the product nofitication logic on the checkout success page.
+* Improve the product notification logic on the checkout success page.
   [r1749]
 
 * Fix http_build_query() compatibility function in the Administration Tool.
@@ -121,9 +121,9 @@ Due to two bugs that were introduced with 2.2 RC2, it has been repackaged as
   [r1703]
 
 * Introduce the ability to show additional checkout buttons on the shopping
-  cart page for certain payment methods (eg, PayPal Express Checkout).
+  cart page for certain payment methods (e.g., PayPal Express Checkout).
   Introduce the ability to define foreign shipping and billing addresses
-  during the checkout procedure (eg, the shipping address provided by PayPal
+  during the checkout procedure (e.g., the shipping address provided by PayPal
   Express Checkout).
   Add further checks to the checkout process page to prevent fraud orders.
   [r1699, r1750]
@@ -142,7 +142,7 @@ Due to two bugs that were introduced with 2.2 RC2, it has been repackaged as
   Fallback to readfile() download delivery mechanism if direct download files.
   [r1681, r1720]
 
-* Add toggleDivBlock() Javascript function to admin/includes/general.js.
+* Add toggleDivBlock() JavaScript function to admin/includes/general.js.
   [r1663]
 
 ------------------------------------------------------------------------------
@@ -206,7 +206,7 @@ Due to two bugs that were introduced with 2.2 RC2, it has been repackaged as
 
 * Load the payment modules after the order total modules to get the proper
   final order total value. This will break some payment modules duplicating
-  the checkout_process.php logic (ie, PayPal IPN contribution).
+  the checkout_process.php logic (i.e., PayPal IPN contribution).
   [r1600]
 
 * Improve the logic of accepting state names.
@@ -394,7 +394,7 @@ Please review the update-20060817.txt file for the important changes made.
 
  * Added .htaccess file in the 'includes' directory for some security (blocks
    direct http requests to .php files).
-   ie, http://server/catalog/includes/application_top.php
+   i.e., http://server/catalog/includes/application_top.php
 
  * New cache class added for the categoies box (only for PHP4)
    - Note, this is disabled by default due to our run out-of-the-box approach.
@@ -416,8 +416,8 @@ Please review the update-20060817.txt file for the important changes made.
 
  * All font styles are now in stylesheets.
 
- * Full locaization support (ie, categories title, products descriptions,
-   image buttons, etc)
+ * Full localization support (i.e., categories title, products descriptions,
+   image buttons, etc.)
 
  * Table names now as constants (variables)
 
@@ -441,18 +441,18 @@ Please review the update-20060817.txt file for the important changes made.
 
  * Newsletter function in the administration tool.
 
- * New zones for germany, swiss and austria.
+ * New zones for Germany, Switzerland and Austria.
 
  * Prices can now be handled with/without tax. The tax would be correct
    calculated.
 
  * Prices in all countries which joined the euro currency, displays the prices
-   in euro and national currency. This is a european guideline which is now
+   in euro and national currency. This is a European guideline which is now
    support by TEP.
 
  * All address information is now stored in the address_book table only. This
-   change was made to reduce redundancy and allow more feautures in the
-   checkout part (e.g. selection of different BillTo and SendTo addresses)  
+   change was made to reduce redundancy and allow more features in the
+   checkout part (e.g., selection of different BillTo and SendTo addresses)  
 
 ------------------------------------------------------------------------------
 03/06/2001 The Exchange Project Preview Release 2.1
@@ -460,13 +460,13 @@ Please review the update-20060817.txt file for the important changes made.
 
  * Payment methods are now modules, makes it easier to implement other payment
    methods. Supported methods COD, Credit Card, Paypal. CC also supports
-   storing only part of the CC# in the DB with the other digits being emailled
+   storing only part of the CC# in the DB with the other digits being emailed
    to a specific email address.
 
  * Shipping Modules - Modular shipping methods with support for UPS, USPS,
    FEDEX(Ground), Per Item and Flat rate shipping.
 
- * Db query clean up a few AS clauses were added for earlier MySQL versions.
+ * DB query clean up a few AS clauses were added for earlier MySQL versions.
    Error checking added for when no records exist.
 
  * Added languages box - customers can now choose their language anywhere
@@ -492,7 +492,7 @@ Please review the update-20060817.txt file for the important changes made.
  * Countries added to the admin tool.
 
  * The 'Add a Quickie' box now uses the model number instead of the product
-   id.
+   ID.
 
  * The 'Search' box and the 'Advanced Search' now use the same engine.
 

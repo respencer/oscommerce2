@@ -11,8 +11,8 @@
 */
 
 ////
-// This funstion validates a plain text password with an
-// encrpyted password
+// This function validates a plain text password with an
+// encrypted password
   function tep_validate_password($plain, $encrypted) {
     if (tep_not_null($plain) && tep_not_null($encrypted)) {
 // split apart the hash / salt
@@ -45,7 +45,7 @@
   }
 
 ////
-// This function produces a crypted string using the APR-MD5 algorithm
+// This function produces an encrypted string using the APR-MD5 algorithm
 // Source: http://www.php.net/crypt
   function tep_crypt_apr_md5($password, $salt = null) {
     if (empty($salt)) {

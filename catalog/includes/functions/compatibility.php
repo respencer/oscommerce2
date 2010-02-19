@@ -14,7 +14,7 @@
 // Recursively handle magic_quotes_gpc turned off.
 // This is due to the possibility of have an array in
 // $HTTP_xxx_VARS
-// Ie, products attributes
+// I.e., products attributes
   function do_magic_quotes_gpc(&$ar) {
     if (!is_array($ar)) return false;
 

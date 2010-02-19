@@ -11,8 +11,8 @@
 */
 
 ////
-// This funstion validates a plain text password with an
-// encrpyted password
+// This function validates a plain text password with an
+// encrypted password
   function tep_validate_password($plain, $encrypted) {
     if (tep_not_null($plain) && tep_not_null($encrypted)) {
 // split apart the hash / salt

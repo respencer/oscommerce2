@@ -121,7 +121,7 @@
   }
 
 ////
-// javascript to dynamically update the states/provinces list when the country is changed
+// JavaScript to dynamically update the states/provinces list when the country is changed
 // TABLES: zones
   function tep_js_zone_list($country, $form, $field) {
     $countries_query = tep_db_query("select distinct zone_country_id from " . TABLE_ZONES . " order by zone_country_id");
@@ -206,7 +206,7 @@
   }
 
 ////
-// Output a form filefield
+// Output a form file field
   function tep_draw_file_field($name, $required = false) {
     $field = tep_draw_input_field($name, '', '', $required, 'file');
 

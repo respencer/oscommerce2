@@ -115,7 +115,7 @@
 
 ////
 // Check if the required stock is available
-// If insufficent stock is available return an out of stock message
+// If insufficient stock is available return an out of stock message
   function tep_check_stock($products_id, $products_quantity) {
     $stock_left = tep_get_products_stock($products_id) - $products_quantity;
     $out_of_stock = '';
@@ -589,7 +589,7 @@
   }
 
 ////
-// Parse search string into indivual objects
+// Parse search string into individual objects
   function tep_parse_search_string($search_str = '', &$objects) {
     $search_str = trim(strtolower($search_str));
 
@@ -873,7 +873,7 @@
   }
 
 ////
-// Recursively go through the categories and retreive all parent categories IDs
+// Recursively go through the categories and retrieve all parent categories IDs
 // TABLES: categories
   function tep_get_parent_categories(&$categories, $categories_id) {
     $parent_categories_query = tep_db_query("select parent_id from " . TABLE_CATEGORIES . " where categories_id = '" . (int)$categories_id . "'");
@@ -999,14 +999,14 @@
 // This is the central mail function. The SMTP Server should be configured
 // correct in php.ini
 // Parameters:
-// $to_name           The name of the recipient, e.g. "Jan Wildeboer"
+// $to_name           The name of the recipient, e.g., "Jan Wildeboer"
 // $to_email_address  The eMail address of the recipient,
-//                    e.g. jan.wildeboer@gmx.de
+//                    e.g., jan.wildeboer@gmx.de
 // $email_subject     The subject of the eMail
 // $email_text        The text of the eMail, may contain HTML entities
-// $from_email_name   The name of the sender, e.g. Shop Administration
+// $from_email_name   The name of the sender, e.g., Shop Administration
 // $from_email_adress The eMail address of the sender,
-//                    e.g. info@mytepshop.com
+//                    e.g., info@mytepshop.com
 
   function tep_mail($to_name, $to_email_address, $email_subject, $email_text, $from_email_name, $from_email_address) {
     if (SEND_EMAILS != 'true') return false;
@@ -1333,7 +1333,7 @@
     return $addresses['total'];
   }
 
-// nl2br() prior PHP 4.2.0 did not convert linefeeds on all OSs (it only converted \n)
+// nl2br() prior PHP 4.2.0 did not convert line-feeds on all OSs (it only converted \n)
   function tep_convert_linefeeds($from, $to, $string) {
     if ((PHP_VERSION < "4.0.5") && is_array($from)) {
       return preg_replace('/(' . implode('|', $from) . ')/', $to, $string);

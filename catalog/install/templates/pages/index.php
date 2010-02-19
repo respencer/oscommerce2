@@ -180,7 +180,7 @@
     if (sizeof($configfile_array) > 0) {
 ?>
 
-      <p>The webserver is not able to save the installation parameters to its configuration files.</p>
+      <p>The web server is not able to save the installation parameters to its configuration files.</p>
       <p>The following files need to have their file permissions set to world-writeable (chmod 777):</p>
       <p>
 
@@ -212,7 +212,7 @@
 
 <?php
     if (sizeof($warning_array) > 0) {
-      echo '    <p><i>Changing webserver configuration parameters may require the webserver service to be restarted before the changes take affect.</i></p>' . "\n";
+      echo '    <p><i>Changing web server configuration parameters may require the web server service to be restarted before the changes take affect.</i></p>' . "\n";
     }
 ?>
 
@@ -222,7 +222,7 @@
   } else {
 ?>
 
-    <p>The webserver environment has been verified to proceed with a successful installation and configuration of your online store.</p>
+    <p>The web server environment has been verified to proceed with a successful installation and configuration of your online store.</p>
     <p>Please continue to start the installation procedure.</p>
     <p align="right"><a href="install.php"><img src="images/button_continue.gif" border="0" alt="Continue" /></a></p>
 

@@ -21,7 +21,7 @@
 
 // try to open the file
     if ($fp = @fopen($filename, 'w')) {
-// obtain a file lock to stop corruptions occuring
+// obtain a file lock to stop corruption from occurring
       flock($fp, 2); // LOCK_EX
 // write serialized data
       fputs($fp, serialize($var));
@@ -35,7 +35,7 @@
   }
 
 ////
-//! Read in seralized data.
+//! Read in serialized data.
 //  read_cache reads the serialized data in $filename and
 //  fills $var using unserialize().
 //  $var      -  The variable to be filled.
@@ -59,7 +59,7 @@
 // read in serialized data
       $szdata = fread($fp, filesize($filename));
       fclose($fp);
-// unserialze the data
+// unserialize the data
       $var = unserialize($szdata);
 
       $success = true;
@@ -71,8 +71,8 @@
 ////
 //! Get data from the cache or the database.
 //  get_db_cache checks the cache for cached SQL data in $filename
-//  or retreives it from the database is the cache is not present.
-//  $SQL      -  The SQL query to exectue if needed.
+//  or retrieves it from the database if the cache is not present.
+//  $SQL      -  The SQL query to execute if needed.
 //  $filename -  The name of the cache file.
 //  $var      -  The variable to be filled.
 //  $refresh  -  Optional.  If true, do not read from the cache.
@@ -81,7 +81,7 @@
 
 // check for the refresh flag and try to the data
     if (($refresh == true)|| !read_cache($var, $filename)) {
-// Didn' get cache so go to the database.
+// Didn't get cache, so go to the database.
 //      $conn = mysql_connect("localhost", "apachecon", "apachecon");
       $res = tep_db_query($sql);
 //      if ($err = mysql_error()) trigger_error($err, E_USER_ERROR);

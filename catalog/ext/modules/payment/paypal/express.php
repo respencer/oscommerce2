@@ -415,7 +415,7 @@
 
               $shipping_set = false;
 
-// if available, set the selected shipping rate from PayPals order review page
+// if available, set the selected shipping rate from PayPal's order review page
               if (isset($response_array['SHIPPINGOPTIONNAME']) && isset($response_array['SHIPPINGOPTIONAMOUNT'])) {
                 foreach ($quotes as $quote) {
                   if (!isset($quote['error'])) {
@@ -671,7 +671,7 @@
 
       $params['SHIPPINGAMT'] = $paypal_express->format_raw($cheapest_rate);
       $params['AMT'] = $paypal_express->format_raw($params['ITEMAMT'] + $params['TAXAMT'] + $params['SHIPPINGAMT']);
-      $params['MAXAMT'] = $paypal_express->format_raw($params['AMT'] + $expensive_rate + 100); // safely pad higher for dynamic shipping rates (eg, USPS express)
+      $params['MAXAMT'] = $paypal_express->format_raw($params['AMT'] + $expensive_rate + 100); // safely pad higher for dynamic shipping rates (e.g., USPS express)
 
       $response_array = $paypal_express->setExpressCheckout($params);
 
