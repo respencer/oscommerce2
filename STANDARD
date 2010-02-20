@@ -113,7 +113,7 @@ When instantiating classes into objects, the following style must be used:
 <?php
 // without class parameters*
   $object = new className;
-  
+
 // with class parameters
   $object = new className($parameter1);
 ?>

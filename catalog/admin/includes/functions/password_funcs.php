@@ -29,7 +29,7 @@
   }
 
 ////
-// This function makes a new password from a plaintext password. 
+// This function makes a new password from a plaintext password.
   function tep_encrypt_password($plain) {
     $password = '';
 

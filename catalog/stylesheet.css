@@ -32,7 +32,7 @@ A:hover {
 }
 
 FORM {
-	display: inline;
+  display: inline;
 }
 
 TR.header {
@@ -48,11 +48,11 @@ TD.headerNavigation {
   font-size: 10px;
   background: #bbc3d3;
   color: #ffffff;
-  font-weight : bold;
+  font-weight: bold;
 }
 
-A.headerNavigation { 
-  color: #FFFFFF; 
+A.headerNavigation {
+  color: #FFFFFF;
 }
 
 A.headerNavigation:hover {
@@ -68,8 +68,8 @@ TD.headerError {
   font-size: 12px;
   background: #ff0000;
   color: #ffffff;
-  font-weight : bold;
-  text-align : center;
+  font-weight: bold;
+  text-align: center;
 }
 
 TR.headerInfo {

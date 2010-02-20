@@ -126,7 +126,7 @@
       }
     }
   }
-  tep_show_category($first_element); 
+  tep_show_category($first_element);
 
   $info_box_contents = array();
   $info_box_contents[] = array('text' => $categories_string);
