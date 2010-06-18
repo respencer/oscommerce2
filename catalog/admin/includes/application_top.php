@@ -27,8 +27,8 @@
 // Include application configuration parameters
   require('includes/configure.php');
 
-// Define the project version
-  define('PROJECT_VERSION', 'osCommerce Online Merchant v2.2 RC2a');
+// Define the project version --- obsolete, now retrieved with tep_get_version()
+  define('PROJECT_VERSION', 'osCommerce Online Merchant v2.2');
 
 // some code to solve compatibility issues
   require(DIR_WS_FUNCTIONS . 'compatibility.php');
@@ -37,10 +37,10 @@
   $PHP_SELF = (isset($HTTP_SERVER_VARS['PHP_SELF']) ? $HTTP_SERVER_VARS['PHP_SELF'] : $HTTP_SERVER_VARS['SCRIPT_NAME']);
 
 // Used in the "Backup Manager" to compress backups
-  define('LOCAL_EXE_GZIP', '/usr/bin/gzip');
-  define('LOCAL_EXE_GUNZIP', '/usr/bin/gunzip');
-  define('LOCAL_EXE_ZIP', '/usr/local/bin/zip');
-  define('LOCAL_EXE_UNZIP', '/usr/local/bin/unzip');
+  define('LOCAL_EXE_GZIP', 'gzip');
+  define('LOCAL_EXE_GUNZIP', 'gunzip');
+  define('LOCAL_EXE_ZIP', 'zip');
+  define('LOCAL_EXE_UNZIP', 'unzip');
 
 // include the list of project filenames
   require(DIR_WS_INCLUDES . 'filenames.php');
@@ -92,6 +92,8 @@
     ini_set('session.cookie_lifetime', '0');
     ini_set('session.cookie_path', DIR_WS_ADMIN);
   }
+
+  @ini_set('session.use_only_cookies', (SESSION_FORCE_COOKIE_USE == 'True') ? 1 : 0);
 
 // lets start our session
   tep_session_start();

@@ -108,6 +108,7 @@ define('BOX_TOOLS_MAIL', 'Send Email');
 define('BOX_TOOLS_NEWSLETTER_MANAGER', 'Newsletter Manager');
 define('BOX_TOOLS_SEC_DIR_PERMISSIONS', 'Security Directory Permissions');
 define('BOX_TOOLS_SERVER_INFO', 'Server Info');
+define('BOX_TOOLS_VERSION_CHECK', 'Version Checker');
 define('BOX_TOOLS_WHOS_ONLINE', 'Who\'s Online');
 
 // localization box text in includes/boxes/localization.php
@@ -198,6 +199,7 @@ define('IMAGE_DETAILS', 'Details');
 define('IMAGE_DELETE', 'Delete');
 define('IMAGE_EDIT', 'Edit');
 define('IMAGE_EMAIL', 'Email');
+define('IMAGE_EXPORT', 'Export');
 define('IMAGE_ICON_STATUS_GREEN', 'Active');
 define('IMAGE_ICON_STATUS_GREEN_LIGHT', 'Set Active');
 define('IMAGE_ICON_STATUS_RED', 'Inactive');
