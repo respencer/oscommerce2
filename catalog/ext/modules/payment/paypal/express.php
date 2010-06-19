@@ -668,7 +668,7 @@
 // don't recalculate currency values as they have already been calculated
       $params['SHIPPINGAMT'] = $paypal_express->format_raw($cheapest_rate, '', 1);
       $params['AMT'] = $paypal_express->format_raw($params['ITEMAMT'] + $params['TAXAMT'] + $params['SHIPPINGAMT'], '', 1);
-      $params['MAXAMT'] = $paypal_express->format_raw($params['AMT'] + $expensive_rate + 100, '', 1); // safely pad higher for dynamic shipping rates (eg, USPS express)
+      $params['MAXAMT'] = $paypal_express->format_raw($params['AMT'] + $expensive_rate + 100, '', 1); // safely pad higher for dynamic shipping rates (e.g., USPS express)
 
       $response_array = $paypal_express->setExpressCheckout($params);
 

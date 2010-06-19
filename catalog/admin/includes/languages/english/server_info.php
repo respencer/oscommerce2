@@ -25,7 +25,7 @@ define('TITLE_DATABASE', 'Database:');
 define('TEXT_EXPORT_INTRO', 'The following information can be submitted to osCommerce by clicking on the Send button. You can also save the information to a file by clicking Save. This information is totally anonymous and cannot be used to identify an individual system. It will be used for support and development purposes only.');
 define('TEXT_EXPORT_INFO', 'Export Server Information');
 
-define('SUCCESS_INFO_SUBMIT', 'Your information has been submitted sucessfully.');
+define('SUCCESS_INFO_SUBMIT', 'Your information has been submitted successfully.');
 define('ERROR_INFO_SUBMIT', 'Could not connect to the osCommerce website to submit your configuration. Please try again later');
 
 ?>
